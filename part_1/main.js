@@ -14,7 +14,7 @@ if ((firstNumber || firstNumber === 0) && (secondNumber >= 2 && secondNumber <= 
       result = Number(firstNumber.toString(secondNumber));
       break;
     case false:
-      result = Number(firstNumber.toString(secondNumber)).toFixed(precision);
+      result = +Number(firstNumber.toString(secondNumber)).toFixed(precision);
       break;
   }
   console.log(`Число ${firstNumber} в десятичной системе счисления равно ${result} в ${secondNumber}-й системе счисления`);
